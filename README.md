@@ -1,54 +1,70 @@
-# React + TypeScript + Vite
+# bun-threejs-boilerplate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **bun-threejs-boilerplate**! This template repository is crafted to help you quickly start your Three.js projects utilizing Bun and Vite tooling.
 
-Currently, two official plugins are available:
+## Demo
+Check out the live demo at: [cb341.dev/bun-threejs-boilerplate](https:///cb341.dev/bun-threejs-boilerplate)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Features
+- **Vite** app for fast reloading
+- **React** for frontend
+- **Unit testing** via Bun
+- **Automatic deployment** through GitHub Pages workflow ([gh_pages.yml](./github/workflows/gh_pages.yml))
+- **Automatic linting** and fast checks via ([validation.yml](./github/workflows/validation.yml))
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Usage
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To use this template, follow these steps:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Create a GitHub Repository**: 
+   - Go to GitHub and create a new repository using this template by clicking on the "Use this template" button.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Clone the Repository**: 
+   - Clone it to your local machine using the following command:
+     ```bash
+     git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+     ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+3. **Set Up the Project**: 
+   - Navigate into your project directory and run the setup script to install dependencies:
+     ```bash
+     cd YOUR_REPOSITORY_NAME
+     bin/setup
+     ```
+
+4. **Explore the Repository**: 
+   - Check the README for additional examples and documentation on how to use this template effectively.
+
+This template is designed to streamline your development process with Three.js, Bun, and Vite tooling. Happy coding!
+
+## Development Instructions
+
+To get started, follow these simple steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/CuddlyBunion341/bun-threejs-boilerplate.git
+   ```
+
+2. Navigate into the project directory and set up the project:
+   ```bash
+   cd bun-threejs-boilerplate
+   bin/setup
+   ```
+
+3. Run the application:
+   ```bash
+   bin/run
+   ```
+
+4. Start development mode:
+   ```bash
+   bin/dev
+   ```
+
+Happy coding!
+
+## License
+
+This repository is licensed under the MIT License. For more information, please refer to the license file [LICENSE](./LICENSE) for detailed terms and conditions.
