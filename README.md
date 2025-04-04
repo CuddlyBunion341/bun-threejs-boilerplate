@@ -65,4 +65,6 @@ To get started, follow these simple steps:
 
 Happy coding!
 
+## License
 
+This repository is licensed under the MIT License. For more information, please refer to the license file [LICENSE](./LICENSE) for detailed terms and conditions.
